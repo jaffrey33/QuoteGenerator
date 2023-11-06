@@ -1,37 +1,57 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box; 
+    margin: 0;
 
 }
 body{
-    margin: 0;
-    height: 100vh;   
   
+    height: 100vh; 
+    background: url(./images/b2.jpg) no-repeat center center/cover;  
+
+
 }
 h1{
-  color: white;
+  color: rgba(247,90,142,1);
+  font-size: 5vh;
+}
+p{   
+  font-size: 3vh;
+ 
+  font-weight: 500;
+}
+h4{
+  font-size: 2vh;
+    
 }
 .main-container{
     display: flex;  /*flex container*/
-    height: 90vh;
- 
+    height: 100vh;
     justify-content: center;
     align-items: center;
+
 }
 .container{
+    height: 60%;
+    width: 50%;
+    margin: auto;
     text-align: center;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding:50px;
-    width: min(50% - 2rem);
-    height: 50%;
-    background: linear-gradient(183deg, rgba(147,197,222,1) 0%, rgba(38,199,255,1) 100%);
+    display: inline-block;
+   
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.4);
     align-self: center;
     border-radius: 100px 10px 100px 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
 }
 
 .btn {
@@ -43,7 +63,7 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background: #1C1A1C;
+    background: rgba(247,90,142,1);
     cursor: pointer;
     transition: all 450ms ease-in-out;
   }
@@ -60,11 +80,11 @@ h1{
   }
   
   .btn:hover {
-    background: linear-gradient(0deg,#A47CF3,#683FEA);
+    background: linear-gradient(183deg, rgba(204,132,132,1) 0%, rgba(247,90,142,1) 100%);
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
     inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
     0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-    0px 0px 180px 0px #9917FF;
+    0px 0px 180px 0px rgba(247,90,142,1);
     transform: translateY(-2px);
   }
   
@@ -76,3 +96,10 @@ h1{
     fill: white;
     transform: scale(1.2);
   } 
+
+  @media (max-width: 768px){
+    .container{
+      width: 70%;
+      height: 80%;
+    }
+  }
